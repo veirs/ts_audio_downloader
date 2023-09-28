@@ -1,6 +1,0 @@
-ffmpeg-python
-m3u8
-bs4
-tqdm
-librosa
-scikit-image

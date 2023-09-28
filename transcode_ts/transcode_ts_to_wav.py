@@ -14,9 +14,8 @@ from hydrophone import Hydrophone
         or by running python3 -m pip install xxxx  for each library in the requirements.txt file
     Specify directory for the wav files and start/stop datetimes
 '''
-wavDir = "/home/val/Documents/8_17_23_15:00_jkl_tst/"
+wavDir = "/home/val/Documents/09_27_23_speedboats/"
 
 pipeline = NoiseAnalysisPipeline(Hydrophone.ORCASOUND_LAB, pqt_folder='pqt', delta_f=10, bands=3, delta_t=1, no_auth=True)
 
-pipeline.get_wav_files(wavDir, dt.datetime(2023, 8, 22, 12, 15), dt.datetime(2023, 8, 22, 12, 18))
-
+pipeline.get_wav_files(wavDir, dt.datetime(2023, 9, 27, 13, 10), dt.datetime(2023, 9, 27, 14, 00))

@@ -83,6 +83,9 @@ class NoiseAnalysisPipeline:
             self.wav_folder,
             overwrite_output
         )
+        if len(stream.valid_folders) == 0:
+            print("EXITING...")
+            return
         while max_files is None and not stream.is_stream_over():
             try:
                 wav_file_path, clip_start_time, _ = stream.get_next_clip()

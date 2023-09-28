@@ -27,8 +27,8 @@ def extract_ts_segments(bucket_name, start_time, end_time, output_file):
 
 if __name__ == '__main__':
     # Get the AWS S3 credentials.
-    aws_access_key_id = 'xxxxxxxxxVL@i6'
-    aws_secret_access_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxCUzL'
+    aws_access_key_id = 'tj#6mU5DZXk33d&%TmDyFY8xj3VL@i6'
+    aws_secret_access_key = 'AKIAZN2WCXIF4EU64M5X,TkCEW2rkK5RIsP8Vfjrtr3uDruLUF3WZbZ+fCUzL'
 
     # Create the AWS S3 client.
     s3 = boto3.client('s3')#, aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)

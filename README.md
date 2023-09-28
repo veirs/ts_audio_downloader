@@ -1,5 +1,5 @@
 # ts_audio_downloader
-Run python script: <B>transcode_ts_to_wav.py</B>
+Run python script: <B>transcode_ts_to_wav.py</B> in the transcode_ts directory
 
 Gather ts audio segments from selected datetime range and download to local computer as wav files.
 
@@ -14,5 +14,8 @@ Gather ts audio segments from selected datetime range and download to local comp
     Make sure that the needed dependencies are installed  pip install -r requirements.txt    
         or by running python3 -m pip install xxxx  for each library in the requirements.txt file
     Specify directory for the wav files and start/stop datetimes
+
+    There is often a few hours delay before this program can access the very recent segments.
+    I (Val) am guessing that some database of S3 bucket files is not updated too frequently.
 
 
